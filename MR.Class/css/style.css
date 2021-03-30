@@ -1,0 +1,377 @@
+body {
+    background-color: #eaeaea;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Header */
+.wrapper {
+    padding-left: 15px;
+    padding-right: 15px;
+    max-width: 1170px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.center {
+    text-align: center;
+}
+.menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 36px;
+    padding-bottom: 40px;
+}
+.men {
+    display: flex;
+    list-style-type: none;
+    padding-left: 0;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 0;
+}
+
+.men li {
+    padding-left: 23px;
+    margin-left: 22px;
+    position: relative;
+}
+
+.men li:first-child {
+    padding-left: 0;
+    margin-left: 0;
+}
+
+.men li:before{
+    content: "";
+    display: block;
+    width: 2px;
+    height: 100%;
+    background-color: #494949;
+    position: absolute;
+    left: 0;
+}
+
+.men li a:hover{
+    color: green;
+}
+
+
+.men li a:active{
+    color: red;
+}
+
+.men li:first-child::before {
+    display: none;
+
+}
+
+.men li a {
+    text-decoration: none;
+    color: #494949;
+}
+
+/* Banner */
+.banner {
+    background-image: url(../img/banner.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    color: #fff;
+    padding-top: 260px;
+    padding-bottom: 285px;
+}
+
+.pizza {
+    position: absolute;
+    right: 0;
+    top: -230px;
+}
+
+.title {
+    font-size: 50px;
+    margin-bottom: 23px;
+}
+.discription {
+    font-size: 25px;
+    line-height: 30px;
+    max-width: 570px;
+    font-family: 'Roboto', sans-serif;
+    margin-bottom: 24px;
+}
+
+.btn {
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 20px;
+    border: 2px solid #fff;
+    font-weight: 800;
+    padding: 16px 0;
+    max-width: 190px;
+    text-align: center;
+}
+
+.btn:hover {
+    color:green;
+
+}
+
+.btn:active {
+    color: #fff;
+}
+
+/* PAGE */
+
+.h2 {
+    font-size: 45px;
+    color: #282828;
+    text-transform: uppercase;
+    font-weight: 700;
+    text-align: center;
+    position: relative;
+    display: inline-block;
+    padding-left: 127px;
+    padding-right: 127px; 
+    margin-bottom: 20px;
+}
+
+.h2::before, .h2::after {
+    content: "";
+    position: absolute;
+    background-image: url(../img/item.png);
+    display: block;
+    width: 102px;
+    height: 28px;
+    top: calc(50% - 14px);
+}
+
+.h2::before {
+    left: 0;
+}
+
+.h2::after {
+    right: 0;
+}
+
+.h2 + p {
+    font-size: 20px;
+    color: #959595;
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+}
+
+/* Menu */
+.meni {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    padding-left: 0;
+    margin-top: 42px;
+    margin-bottom: 65px;
+}
+
+.meni li a:hover {
+    color: green;
+}
+
+.meni li a:active {
+    color: red;
+}
+
+.meni li {
+    margin-left: 15px;
+    margin-right: 15px;
+    padding-left: 20px;
+    padding-right: 20px;
+    position: relative;
+}
+
+.meni li:before{
+    content: "";
+    display: block;
+    width: 2px;
+    height: 100%;
+    background-color: #494949;
+    position: absolute;
+    left: 0;
+}
+
+.meni li:first-child::before {
+display: none;
+}
+
+.meni li a {
+    text-decoration: none;
+    color: #494848;
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.meni li a.active {
+    border-bottom: 4px solid #ee252d;
+    padding-bottom: 18px;
+    position: relative;
+}
+
+.meni li a.active::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: 0 auto;
+    display: block;
+    width: 0;
+    height: 0;
+    border: 7px solid transparent;
+    border-bottom: 7px solid #ee252d;
+}
+
+/* HOW TO PROGRESS? */
+.box {
+    background-color: #fff;
+    display: flex;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.11);
+    justify-content: space-between;
+    max-width: 1170px;
+    margin: 0 auto;
+    margin-bottom: 100px;
+}
+.box-item {
+    padding: 54px 0 58px 55px;
+    box-sizing: content-box;
+}
+.number {
+    font-family: 'Roboto', sans-serif;
+    font-size: 120px;
+    font-weight: 900;
+    position: relative;
+    margin-bottom: 0;
+    margin-top: 0;
+    color: #282828;
+}
+.number::after {
+    content: "";
+    display: block;
+    position: absolute;
+}
+.number-one::after {
+    background-image: url(../img/icon1.png);
+    width: 126px;
+    height: 71px;
+    left: 69px;
+    top: calc(50% - 34.5px)
+}
+.number-two::after {
+    background-image: url(../img/icon2.png);
+    width: 184px;
+    height: 81px;
+    left: 88px;
+    top: calc(50% - 43.4px)
+}
+.number-thre::after {
+    background-image: url(../img/icon3.png);
+    width: 142px;
+    height: 68px;
+    left: 94px;
+    top: calc(50% - 34px)
+}
+
+.box-item:last-child .box-tex {
+    border-right: none;
+}
+.box-text {
+    border-right: 1px solid #eaeaea;
+    padding-right: 55px;
+    font-weight: 700;
+}
+.box-text h3 {
+    font-size: 45px;
+    color: #282828;
+    margin-bottom: 23px;
+ }
+
+ .box-tex p {
+     font-size: 18px;
+     color: #282828;
+     font-family: 'Roboto', sans-serif;
+     line-height: 24px;
+     margin-top: 0;
+ }
+
+ /* Кнопка */
+ .btn-start {
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #fff;
+    font-size: 30px;
+    font-weight: 700;
+    background-image: url(../img/bg.png);
+    background-position: center center;
+    padding: 29px 58px;
+    background-repeat: no-repeat;
+ }  
+
+ .page {
+     padding-top: 120px;
+     padding-bottom: 94px;
+ }
+ 
+ .footer {
+     background-image: url(../img/footer.png);
+     padding: 44px 0;
+     color: #fff ;
+     text-transform: uppercase;
+     font: 20px;
+     font-family: 'Roboto', sans-serif;
+     text-align: center;
+ }
+
+ @media (max-width: 1200px) {
+     .wrapper {
+         max-width: 800;
+     }
+     .pizza {
+         display: none;
+     }
+     .banner {
+        padding-top: 76px;
+        padding-bottom: 100px;
+     }
+     h2 {
+        font-size: 35px;    
+     }
+     h2 p {
+        font-size: 18px;
+     }
+    .meni li {
+        padding-left: 15px;
+        padding-right: 15px;
+
+    }
+    .box {
+        flex-direction: column;
+    }
+    .box-item {
+        padding: 30px 55px 24px 55px;
+    }
+    .box text {
+        border-right: none;
+        padding-right: 0;
+        padding-bottom: 30px;
+        border-bottom: 1px solid #eaeaea;
+    }
+    .box-item:last-child .box-text {
+        border-bottom: none;
+    }
+    }
+
+    @media (max-width: 750px) {
+        .menu {
+            flex-direction: column
+        }
+    }
+ 
